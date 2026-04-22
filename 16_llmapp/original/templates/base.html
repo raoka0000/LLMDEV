@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>なりきりチャット</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>なりきりチャット</h1>
+            <p class="subtitle">キャラクター名を入力すると、AIがそのキャラクターになりきって会話します。</p>
+        </header>
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

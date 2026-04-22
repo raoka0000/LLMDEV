@@ -1,0 +1,151 @@
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Yu Gothic", sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    margin: 0 0 4px 0;
+    font-size: 24px;
+}
+
+.subtitle {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* キャラクター名入力欄 */
+.character-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    padding: 12px;
+    background-color: #fffbe6;
+    border: 1px solid #ffe58f;
+    border-radius: 6px;
+}
+
+.character-box label {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.character-box input {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* チャットボックス */
+.chat-box {
+    border: 1px solid #ddd;
+    padding: 16px;
+    height: 420px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+    background-color: #fafafa;
+    border-radius: 6px;
+}
+
+.empty-message {
+    color: #888;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 14px;
+}
+
+.user-message,
+.bot-message {
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+.user-message {
+    background-color: #cce5ff;
+    margin-left: auto;
+    text-align: left;
+}
+
+.bot-message {
+    background-color: #e8e8ec;
+    margin-right: auto;
+    text-align: left;
+}
+
+/* 入力エリア */
+.input-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.input-box textarea {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 56px;
+    font-family: inherit;
+}
+
+.input-box textarea:disabled {
+    background-color: #f0f0f0;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.input-box button {
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    min-height: 56px;
+}
+
+.input-box button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.input-box button:disabled {
+    background-color: #9ec5fe;
+    cursor: not-allowed;
+}
+
+.clear-button {
+    margin-top: 14px;
+    padding: 8px 14px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.clear-button:hover {
+    background-color: #c82333;
+}
